@@ -19,13 +19,14 @@ export const ModalDemo = () => {
 
       <Modal isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />
+
         <ModalContent>
           <ModalHeader>모달 헤더 내용</ModalHeader>
           <ModalCloseButton />
 
           <ModalBody>모달 내용 작성</ModalBody>
           <ModalFooter>
-            <Button onClose={onClose}>닫기</Button>
+            <Button onClick={onClose}>닫기</Button>
           </ModalFooter>
         </ModalContent>
       </Modal>
